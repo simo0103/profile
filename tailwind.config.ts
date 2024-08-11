@@ -8,9 +8,14 @@ export const content = [
 ]
 
 export const theme = {
+    fontSize: {
+        xxs: ['8px'],
+        xs: ['12px']
+    },
     extend: {
         fontFamily: {
-            sans: ['Inter var', ..._fontFamily.sans],
+            inter: ['Inter var', ..._fontFamily.sans],
+            oswald: ['Oswald', "sans-serif"]
         },
     },
 }
