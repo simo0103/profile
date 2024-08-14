@@ -9,8 +9,13 @@ export const content = [
 
 export const theme = {
     fontSize: {
-        xxs: ['8px'],
-        xs: ['12px']
+        xs: ['8px'],
+        s: ['12px'],
+        m: ['16PX'],
+        lg: ['24px'],
+        xl: ['32px'],
+        xxl: ['48px'],
+        mega: ['300px']      
     },
     extend: {
         fontFamily: {

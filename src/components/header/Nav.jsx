@@ -17,21 +17,21 @@ const Nav = () => {
 					</a>
 					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white"></LuDot>
+				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
 					<a href="#Production" className="text-white hover:text-red uppercase">
 						production
 					</a>
 					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white"></LuDot>
+				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
 					<a href="#Boxoffice" className="text-white hover:text-red uppercase">
 						box office
 					</a>
 					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white"></LuDot>
+				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
 					<a href="#Imax6" className="text-white hover:text-red uppercase">
 						imax 6
