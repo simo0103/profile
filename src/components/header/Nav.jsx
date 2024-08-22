@@ -1,50 +1,44 @@
 // import { gsap } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
 import { PiUserLight } from "react-icons/pi";
-import { LuDot } from "react-icons/lu";
-import { FaCircle } from "react-icons/fa";
+import StMariaLogo from "/smaria.svg";
 
 const Nav = () => {
 	return (
 		<nav className="nav flex items-center h-20 px-6">
 			<div className="flex flex-1 items-center gap-4">
-				<h1>CINEDAILY</h1>
+				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
+				<img src={StMariaLogo} />
 			</div>
 			<ul className="flex flex-auto items-center gap-4">
 				<li className="flex items-center flex-col">
-					<a href="#Topcasts" className="text-white hover:text-red uppercase">
-						top casts
+					<a href="#Home" className="text-black hover:text-red uppercase">
+						home
 					</a>
-					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
-					<a href="#Production" className="text-white hover:text-red uppercase">
-						production
+					<a href="#Menu" className="text-black hover:text-red uppercase">
+						menu
 					</a>
-					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
-					<a href="#Boxoffice" className="text-white hover:text-red uppercase">
-						box office
+					<a href="#Ourstory" className="text-black hover:text-red uppercase">
+						our story
 					</a>
-					<FaCircle className="text-red-700 w-2"></FaCircle>
 				</li>
-				<LuDot className="text-white mb-[5px]"></LuDot>
 				<li className="flex items-center flex-col">
-					<a href="#Imax6" className="text-white hover:text-red uppercase">
-						imax 6
+					<a href="#Order" className="text-black hover:text-red uppercase">
+						order online
 					</a>
-					<FaCircle className="text-red-700 w-2"></FaCircle>
+				</li>
+				<li className="flex items-center flex-col">
+					<a href="#Booktable" className="text-black hover:text-red uppercase">
+						book a table
+					</a>
 				</li>
 			</ul>
 			<ul className="flex items-center gap-4">
 				<li>
-					<CiSearch className="text-white"></CiSearch>
-				</li>
-				<li>
-					<PiUserLight className="text-white"></PiUserLight>
+					<PiUserLight className="text-black"></PiUserLight>
 				</li>
 			</ul>
 		</nav>
