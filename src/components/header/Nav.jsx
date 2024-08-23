@@ -1,44 +1,63 @@
 // import { gsap } from "react-icons/fa6";
-import { PiUserLight } from "react-icons/pi";
+import { PiBasketLight } from "react-icons/pi";
 import StMariaLogo from "/smaria.svg";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<nav className="nav flex items-center h-20 px-6">
-			<div className="flex flex-1 items-center gap-4">
+		<nav className="nav flex items-center h-18 m-6">
+			<div className="flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
-				<img src={StMariaLogo} />
+				<img className="h-16" src={StMariaLogo} />
 			</div>
-			<ul className="flex flex-auto items-center gap-4">
+			<ul className="flex  flex-1 justify-center items-center gap-8">
 				<li className="flex items-center flex-col">
-					<a href="#Home" className="text-black hover:text-red uppercase">
+					<NavLink
+						to="/Home"
+						className="text-black hover:text-red uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+					>
 						home
-					</a>
+					</NavLink>
 				</li>
 				<li className="flex items-center flex-col">
-					<a href="#Menu" className="text-black hover:text-red uppercase">
+					<NavLink
+						to="/Menu"
+						className="text-black hover:text-red uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+					>
 						menu
-					</a>
+					</NavLink>
 				</li>
 				<li className="flex items-center flex-col">
-					<a href="#Ourstory" className="text-black hover:text-red uppercase">
+					<NavLink
+						to="/Ourstory"
+						className="text-black hover:text-red uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+					>
 						our story
-					</a>
+					</NavLink>
 				</li>
 				<li className="flex items-center flex-col">
-					<a href="#Order" className="text-black hover:text-red uppercase">
+					<NavLink
+						to="/Orderonline"
+						className="text-black hover:text-red uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+					>
 						order online
-					</a>
+					</NavLink>
 				</li>
 				<li className="flex items-center flex-col">
-					<a href="#Booktable" className="text-black hover:text-red uppercase">
+					<NavLink
+						to="/Booktable"
+						className="text-black hover:text-red uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+					>
 						book a table
-					</a>
+					</NavLink>
 				</li>
 			</ul>
-			<ul className="flex items-center gap-4">
+			<ul className="flex items-center gap-8">
 				<li>
-					<PiUserLight className="text-black"></PiUserLight>
+					<PiBasketLight className="text-black w-6 h-6"></PiBasketLight>
+				</li>
+				<li className="text-white bg-black py-4 px-10 rounded-full">
+					<span>Sign Up</span>
 				</li>
 			</ul>
 		</nav>
