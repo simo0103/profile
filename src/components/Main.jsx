@@ -10,7 +10,7 @@ function Main() {
 	return (
 		<div className="content">
 			<Routes>
-				<Route path="/" component={<Home />} />
+				<Route path="/home" component={<Home />} />
 				<Route path="/menu" component={<Menu />} />
 				<Route path="/booktable" component={<BookTable />} />
 				<Route path="/ourstory" component={<Ourstory />} />

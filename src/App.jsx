@@ -14,7 +14,7 @@ function App() {
 			<Header />
 			<div className="content">
 				<Routes>
-					<Route path="/" element={<Home />}></Route>
+					<Route path="/home" element={<Home />}></Route>
 					<Route path="/booktable" element={<BookTable />}></Route>
 					<Route path="/ourstory" element={<Ourstory />}></Route>
 					<Route path="/menu" element={<Menu />}></Route>
