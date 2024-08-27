@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./home/Home";
 import BookTable from "./BookTable";
 import Ourstory from "./Ourstory";
 import Menu from "./Menu";
@@ -10,7 +10,7 @@ function Main() {
 	return (
 		<div className="content">
 			<Routes>
-				<Route path="/home" component={<Home />} />
+				<Route path="/" component={<Home />} />
 				<Route path="/menu" component={<Menu />} />
 				<Route path="/booktable" component={<BookTable />} />
 				<Route path="/ourstory" component={<Ourstory />} />

@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/header";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 import BookTable from "./components/BookTable";
 import Ourstory from "./components/Ourstory";
 import Menu from "./components/Menu";
@@ -14,7 +14,7 @@ function App() {
 			<Header />
 			<div className="content">
 				<Routes>
-					<Route path="/home" element={<Home />}></Route>
+					<Route path="/" element={<Home />}></Route>
 					<Route path="/booktable" element={<BookTable />}></Route>
 					<Route path="/ourstory" element={<Ourstory />}></Route>
 					<Route path="/menu" element={<Menu />}></Route>

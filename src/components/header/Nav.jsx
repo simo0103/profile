@@ -1,11 +1,11 @@
 // import { gsap } from "react-icons/fa6";
 import { PiBasketLight } from "react-icons/pi";
-import StMariaLogo from "/smaria.svg";
+import StMariaLogo from "/smariawhite.svg";
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<nav className="nav flex items-center h-18 m-6 pb-safe fixed bottom-0 lg:relative">
+		<nav className="nav flex items-center h-18 m-6">
 			<div className="hidden lg:flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16" src={StMariaLogo} />
@@ -13,11 +13,11 @@ const Nav = () => {
 			<ul className="flex  flex-1 justify-center items-center gap-8">
 				<li>
 					<NavLink
-						to="/Home"
+						to="/"
 						className={({ isActive }) =>
 							isActive
-								? "text-black uppercase py-2 border-b-2 border-solid border-black "
-								: "text-black uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+								? "text-white uppercase py-2 border-b-2 border-solid border-white"
+								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						home
@@ -28,8 +28,8 @@ const Nav = () => {
 						to="/Menu"
 						className={({ isActive }) =>
 							isActive
-								? "text-black uppercase py-2 border-b-2 border-solid border-black "
-								: "text-black uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+								? "text-white uppercase py-2 border-b-2 border-solid border-white"
+								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						menu
@@ -40,8 +40,8 @@ const Nav = () => {
 						to="/Ourstory"
 						className={({ isActive }) =>
 							isActive
-								? "text-black uppercase py-2 border-b-2 border-solid border-black "
-								: "text-black uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+								? "text-white uppercase py-2 border-b-2 border-solid border-white"
+								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						our story
@@ -52,8 +52,8 @@ const Nav = () => {
 						to="/Orderonline"
 						className={({ isActive }) =>
 							isActive
-								? "text-black uppercase py-2 border-b-2 border-solid border-black "
-								: "text-black uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+								? "text-white uppercase py-2 border-b-2 border-solid border-white"
+								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						order online
@@ -64,8 +64,8 @@ const Nav = () => {
 						to="/Booktable"
 						className={({ isActive }) =>
 							isActive
-								? "text-black uppercase py-2 border-b-2 border-solid border-black "
-								: "text-black uppercase py-2 border-b-2 border-solid border-white hover:border-black"
+								? "text-white uppercase py-2 border-b-2 border-solid border-white"
+								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						book a table
@@ -74,7 +74,7 @@ const Nav = () => {
 			</ul>
 			<ul className="hidden lg:flex items-center gap-8">
 				<li>
-					<PiBasketLight className="text-black w-6 h-6"></PiBasketLight>
+					<PiBasketLight className="text-white w-6 h-6"></PiBasketLight>
 				</li>
 				<li className="text-white bg-black py-4 px-10 rounded-full">
 					<span>Sign Up</span>
