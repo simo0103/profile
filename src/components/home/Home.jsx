@@ -1,7 +1,10 @@
 import { Component } from "react";
-import mainImage from "./main2.png";
-import mainImageMobile from "./mainImage.smartphone.png";
+import mainImage from "./images/main2.png";
+import mainImageMobile from "./images/mainImage.smartphone.png";
 import SkeletonImage from "./SkeletonImage";
+import SubContent from "./SubContent";
+import BestSelling from "./BestSelling";
+
 
 class Home extends Component {
 	constructor(props) {
@@ -35,11 +38,10 @@ class Home extends Component {
 						onLoad={this.handleImageLoaded.bind(this)}
 					/>
 				</div>
-				<div className="content text-black text-center text-lg p-20">
-					The pizza served in Santa Maria is exactly the same as the pizza you
-					can eat on the streets of Naples using the same ingredients and
-					adopting the same cooking method
-				</div>
+				<SubContent />
+				<BestSelling />
+				
+				
 			</>
 		);
 	}
