@@ -2,15 +2,25 @@
 import { PiBasketLight } from "react-icons/pi";
 import StMariaLogo from "/smariawhite.svg";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Nav = () => {
+	const [navClass, setNavClass] = useState("");
+
+	useEffect(() => {
+		const banner = document.getElementById("bannerImage");
+		const bannerHeight = banner.offsetHeight;
+		window.addEventListener("scroll", () => {
+			if (window.scrollY >= bannerHeight) setNavClass("bg-black");
+		});
+	}, [navClass]);
 	return (
-		<nav className="nav flex items-center h-18 m-6">
+		<nav className={`${navClass} nav flex items-center h-18 p-6`}>
 			<div className="hidden lg:flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16" src={StMariaLogo} />
 			</div>
-			<ul className="flex  flex-1 justify-center items-center gap-8">
+			<ul className="flex flex-1 justify-center items-center gap-8">
 				<li>
 					<NavLink
 						to="/"

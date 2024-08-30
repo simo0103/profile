@@ -5,14 +5,13 @@ import BookTable from "./components/BookTable";
 import Ourstory from "./components/Ourstory";
 import Menu from "./components/Menu";
 import Orderonline from "./components/OrderOnline";
-
 import { Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<div className="content">
+			<main>
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
 					<Route path="/booktable" element={<BookTable />}></Route>
@@ -20,7 +19,7 @@ function App() {
 					<Route path="/menu" element={<Menu />}></Route>
 					<Route path="/orderonline" element={<Orderonline />}></Route>
 				</Routes>
-			</div>
+			</main>
 		</>
 	);
 }
