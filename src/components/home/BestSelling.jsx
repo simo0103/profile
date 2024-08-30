@@ -10,20 +10,35 @@ function BestSelling() {
 						Our best selling pizzas
 					</h2>
 					<div className="flex gap-8">
-						<div className="card">
-							<img src={Pizza}></img>
+						<div className="card p-4 text-center">
+							<img className="mb-4" src={Pizza}></img>
 							<h3 className="uppercase mb-4">santa caterina</h3>
-							<p>Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan</p>
+							<p className="mb-4">
+								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
+							</p>
+							<button className="py-4 px-10 rounded-full bg-black text-white">
+								add to cart
+							</button>
 						</div>
-						<div className="card">
-							<img src={Pizza}></img>
+						<div className="card p-4 text-center">
+							<img className="mb-4" src={Pizza}></img>
 							<h3 className="uppercase mb-4">santa bufalina</h3>
-							<p>Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan</p>
+							<p className="mb-4">
+								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
+							</p>
+							<button className="py-4 px-10 rounded-full bg-black text-white">
+								add to cart
+							</button>
 						</div>
-						<div className="card">
-							<img src={Pizza}></img>
+						<div className="card p-4 text-center">
+							<img className="mb-4" src={Pizza}></img>
 							<h3 className="uppercase mb-4">santa caterina</h3>
-							<p>Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan</p>
+							<p className="mb-4">
+								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
+							</p>
+							<button className="py-4 px-10 rounded-full bg-black text-white">
+								add to cart
+							</button>
 						</div>
 					</div>
 				</section>

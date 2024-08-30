@@ -6,12 +6,19 @@ import { useEffect, useState } from "react";
 
 const Nav = () => {
 	const [navClass, setNavClass] = useState("");
+	const [buttonBg, setButtonBg] = useState("");
 
 	useEffect(() => {
 		const banner = document.getElementById("bannerImage");
-		const bannerHeight = banner.offsetHeight;
+		const bannerHeight = banner.offsetHeight - 110;
 		window.addEventListener("scroll", () => {
-			if (window.scrollY >= bannerHeight) setNavClass("bg-black");
+			if (window.scrollY >= bannerHeight) {
+				setNavClass("bg-black");
+				setButtonBg("bg-white text-black");
+			} else {
+				setNavClass("bg-transparent");
+				setButtonBg("bg-black text-white");
+			}
 		});
 	}, [navClass]);
 	return (
@@ -86,7 +93,7 @@ const Nav = () => {
 				<li>
 					<PiBasketLight className="text-white w-6 h-6"></PiBasketLight>
 				</li>
-				<li className="text-white bg-black py-4 px-10 rounded-full">
+				<li className={`${buttonBg} py-4 px-10 rounded-full`}>
 					<span>Sign Up</span>
 				</li>
 			</ul>
