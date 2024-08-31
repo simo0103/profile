@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/header";
+import Footer from "./components/Footer";
 import Home from "./components/home/Home";
 import BookTable from "./components/BookTable";
 import Ourstory from "./components/Ourstory";
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/orderonline" element={<Orderonline />}></Route>
 				</Routes>
 			</main>
+			<Footer />
 		</>
 	);
 }
