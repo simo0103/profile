@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 
 function Main() {
 	return (
-		<div className="content">
+		<main>
 			<Routes>
 				<Route path="/" component={<Home />} />
 				<Route path="/menu" component={<Menu />} />
@@ -16,7 +16,7 @@ function Main() {
 				<Route path="/ourstory" component={<Ourstory />} />
 				<Route path="/orderonline" component={<OrderOnline />} />
 			</Routes>
-		</div>
+		</main>
 	);
 }
 

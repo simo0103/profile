@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import mainImage from "./images/shot2.jpeg";
-import mainImageMobile from "./images/mainImage.smartphone.png";
+import mainImageMobile from "./images/shot.jpg";
 import SubContent from "./SubContent";
 import BestSelling from "./BestSelling";
 
@@ -15,14 +15,14 @@ function Home() {
 		observer.observe(myRef.current);
 	}, []);
 	return (
-		<>
+		<div id="home" className="bg-black">
 			<div
 				id="bannerImage"
 				ref={myRef}
 				className="relative after:content-['*'] after:absolute after:w-full after:h-full after:bg-black after:top-0 after:left-0 after:opacity-30"
 			>
 				<div className="absolute text-center translate-x-[-50%] top-[25%] left-1/2 z-10">
-					<h2 className="text-white uppercase text-lg mb-8">
+					<h2 className="text-white uppercase  text-lg mb-8">
 						autentica pizza napoletana
 					</h2>
 					<button className="capitalize py-4 px-10 rounded-md bg-red-800 text-white">
@@ -37,7 +37,7 @@ function Home() {
 			</div>
 			<SubContent />
 			<BestSelling />
-		</>
+		</div>
 	);
 }
 
