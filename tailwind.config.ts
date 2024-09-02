@@ -15,12 +15,15 @@ export const theme = {
         lg: ['24px'],
         xl: ['32px'],
         xxl: ['48px'],
-        mega: ['300px']      
+        mega: ['64px']      
     },
     extend: {
         fontFamily: {
             inter: ['Inter var', ..._fontFamily.sans],
-            oswald: ['Oswald', "sans-serif"]
+            oswald: ['Oswald', "sans-serif"],
+            steelfish: ['STEELFISH', "sans-serif"],
+            steelfishOut: ['STEELFISH-OUT', "sans-serif"],
+            steelfishBold: ['STEELFISH-BOLD', "sans-serif"]
         },
     },
 }

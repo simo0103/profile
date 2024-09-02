@@ -8,10 +8,8 @@ const Nav = () => {
 	const [navClass, setNavClass] = useState("");
 
 	useEffect(() => {
-		const banner = document.getElementById("bannerImage");
-		const bannerHeight = banner.offsetHeight - 110;
 		window.addEventListener("scroll", () => {
-			if (window.scrollY >= bannerHeight) {
+			if (window.scrollY >= 10) {
 				setNavClass("bg-black");
 			} else {
 				setNavClass("bg-transparent");
@@ -24,7 +22,7 @@ const Nav = () => {
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16" src={StMariaLogo} />
 			</div>
-			<ul className="flex flex-1 justify-center items-center gap-8">
+			<ul className="flex flex-1 justify-center items-center gap-8 font-steelfish text-lg">
 				<li>
 					<NavLink
 						to="/"

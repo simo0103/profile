@@ -15,7 +15,7 @@ function BestSelling() {
 					<div className="flex justify-center gap-8">
 						<div className="card bg-zinc-900 pb-8 text-center">
 							<img className="mb-4" width="400px" src={Pizza1}></img>
-							<h3 className="uppercase font-bold mb-4">santa caterina</h3>
+							<h3 className="uppercase font-steelfishBold text-lg font-bold mb-4">santa caterina</h3>
 							<p className="mb-8 font-serif px-4">
 								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
 							</p>
@@ -25,7 +25,7 @@ function BestSelling() {
 						</div>
 						<div className="card bg-zinc-900 pb-8 text-center">
 							<img className="mb-4" width="400px" src={Pizza2}></img>
-							<h3 className="uppercase font-bold mb-4">santa bufalina</h3>
+							<h3 className="uppercase font-steelfishBold text-lg font-bold mb-4">santa bufalina</h3>
 							<p className="mb-8 font-serif px-4">
 								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
 							</p>
@@ -35,7 +35,7 @@ function BestSelling() {
 						</div>
 						<div className="card bg-zinc-900 pb-8 text-center">
 							<img className="mb-4" width="400px" src={Pizza3}></img>
-							<h3 className="uppercase font-bold mb-4">santa caterina</h3>
+							<h3 className="uppercase font-steelfishBold text-lg font-bold mb-4">santa caterina</h3>
 							<p className="mb-8 font-serif px-4">
 								Tomato, Fiordilatte, Salame, Fresh Chili, Parmesan
 							</p>
