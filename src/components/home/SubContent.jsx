@@ -16,9 +16,9 @@ function SubContent() {
 		}
 	}, [image]);
 	return (
-		<section id="subcontent" className="content p-20 flex items-center gap-6">
+		<section id="subcontent" className="content p-20 wide:px-80 flex items-center gap-8">
 
-			<p className="text-white font-serif text-center text-lg">
+			<p className="text-white font-serif text-center text-lg leading-10 px-8 wide:text-xl">
 			{!loaded ? (
                         <Skeleton count={5} />
                     ) : (

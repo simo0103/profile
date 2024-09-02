@@ -17,6 +17,26 @@ export const theme = {
         xxl: ['48px'],
         mega: ['64px']      
     },
+    screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+        'wide': '1980px',
+        // => @media (min-width: 1980px) { ... }
+        '2k': '2560',
+        // => @media (min-width: 2560px) { ... }
+    },
     extend: {
         fontFamily: {
             inter: ['Inter var', ..._fontFamily.sans],

@@ -17,10 +17,10 @@ const Nav = () => {
 		});
 	}, [navClass]);
 	return (
-		<nav className={`${navClass} nav flex items-center h-18 p-6`}>
-			<div className="hidden lg:flex">
+		<nav className={`${navClass} nav flex items-center h-18 py-6 px-8 wide:px-20`}>
+			<div className="logo hidden lg:flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
-				<img className="h-16" src={StMariaLogo} />
+				<img className="h-16 wide:h-20" src={StMariaLogo} />
 			</div>
 			<ul className="flex flex-1 justify-center items-center gap-8 font-sans text-m">
 				<li>
@@ -28,8 +28,8 @@ const Nav = () => {
 						to="/"
 						className={({ isActive }) =>
 							isActive
-								? "text-white uppercase py-2 border-b-2 border-solid border-white"
-								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
+								? "text-white wide:text-lg uppercase py-2 border-b-2 border-solid border-white"
+								: "wide:text-lg text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						home
@@ -40,8 +40,8 @@ const Nav = () => {
 						to="/Menu"
 						className={({ isActive }) =>
 							isActive
-								? "text-white uppercase py-2 border-b-2 border-solid border-white"
-								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
+								? "text-white wide:text-lg uppercase py-2 border-b-2 border-solid border-white"
+								: "wide:text-lg text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						menu
@@ -52,8 +52,8 @@ const Nav = () => {
 						to="/Ourstory"
 						className={({ isActive }) =>
 							isActive
-								? "text-white uppercase py-2 border-b-2 border-solid border-white"
-								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
+								? "text-white wide:text-lg uppercase py-2 border-b-2 border-solid border-white"
+								: "wide:text-lg text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						our story
@@ -64,8 +64,8 @@ const Nav = () => {
 						to="/Orderonline"
 						className={({ isActive }) =>
 							isActive
-								? "text-white uppercase py-2 border-b-2 border-solid border-white"
-								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
+								? "text-white wide:text-lg uppercase py-2 border-b-2 border-solid border-white"
+								: "wide:text-lg text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						order online
@@ -76,8 +76,8 @@ const Nav = () => {
 						to="/Booktable"
 						className={({ isActive }) =>
 							isActive
-								? "text-white uppercase py-2 border-b-2 border-solid border-white"
-								: "text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
+								? "text-white wide:text-lg uppercase py-2 border-b-2 border-solid border-white"
+								: "wide:text-lg text-white uppercase py-2 border-b-2 border-solid border-transparent hover:border-white"
 						}
 					>
 						book a table
@@ -86,9 +86,9 @@ const Nav = () => {
 			</ul>
 			<ul className="hidden lg:flex font-sans text-m items-center gap-8">
 				<li>
-					<PiBasketLight className="text-white w-6 h-6"></PiBasketLight>
+					<PiBasketLight className="text-white text-lg wide:text-xl"></PiBasketLight>
 				</li>
-				<li className="text-white">
+				<li className="text-white wide:text-lg">
 					<span>Sign Up</span>
 				</li>
 			</ul>

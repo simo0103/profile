@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import mainImage from "./images/shot2.jpeg";
-import mainImageMobile from "./images/shot.jpg";
+import mainImageMobile from "./images/shotmobile.png";
 import SubContent from "./SubContent";
 import BestSelling from "./BestSelling";
 import Skeleton from 'react-loading-skeleton'
@@ -32,44 +32,45 @@ function Home() {
 				id="bannerImage"
 				className="relative after:content-['*'] after:absolute after:w-full after:h-full after:bg-black after:top-0 after:left-0 after:opacity-30"
 			>	
-			{loaded &&
-				<div className="absolute text-center translate-x-[-50%] top-[25%] left-1/2 z-10">
-				
-					<h2 className="text-white uppercase font-steelfishBold text-[80px] mb-8">	
-						real napoletan <span className="text-[78px] uppercase font-steelfishOut">pizza</span>
-					</h2>
-					
-					<button className="capitalize py-4 px-10 rounded-md bg-red-800 text-white">
-						book a table
-					</button>
-					<Socials />
-				</div>
-			}
+			
 				{!loaded && <Skeleton height="1000px" highlightColor="#000" baseColor="#18181b"/>}
 				<img
 					ref={banner}
-					srcSet={`${mainImageMobile} 320px, ${mainImageMobile} 680px, ${mainImage} 1025w,  ${mainImage} 1440w`}
+					srcSet={`${mainImageMobile} 320px, ${mainImageMobile} 680px, ${mainImageMobile} 1025w,  ${mainImage} 1440w`}
 					src={mainImageMobile}
 					alt="pizza"
 					style={{ display: loaded ? 'block' : 'none' }}
 				/>
+				{loaded &&
+					<div className="xl:absolute text-center xl:translate-x-[-50%] xl:top-[25%] left-1/2 z-10">
+					
+						<h2 className="text-white uppercase font-steelfishBold text-[80px] wide:text-[100px] mb-8">	
+							real napoletan <span className="text-[78px] wide:text-[96px] uppercase font-steelfishOut">pizza</span>
+						</h2>
+						
+						<button className="py-4 px-10 rounded-md bg-red-800 text-white wide:text-lg">
+							Book a table
+						</button>
+						<Socials />
+					</div>
+				}
 			</div>
 			<section>
-				<ul className="flex gap-4 justify-center text-center w-2/4 mx-auto my-20">
-					<li>
-						<LuClipboardList className="text-red-800 text-xl mb-8"/>
+				<ul className="flex gap-6 justify-center text-center w-2/4 mx-auto my-20">
+					<li className="px-4">
+						<LuClipboardList className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Order</p>
-						<span className="text-white text-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						<span className="text-white text-m">Lorem ipsum dolor sit amet</span>
 					</li>
-					<li>
-						<LuVegan className="text-red-800 text-xl mb-8"/>
+					<li className="px-4">
+						<LuVegan className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Vegan</p>
-						<span className="text-white text-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						<span className="text-white text-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</li>
-					<li>
-						<TbTruckDelivery className="text-red-800 text-xl mb-8"/>
+					<li className="px-4">
+						<TbTruckDelivery className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Delivery</p>
-						<span className="text-white text-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						<span className="text-white text-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</li>
 				</ul>
 			</section>
