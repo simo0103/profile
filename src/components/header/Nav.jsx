@@ -22,7 +22,7 @@ const Nav = () => {
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16" src={StMariaLogo} />
 			</div>
-			<ul className="flex flex-1 justify-center items-center gap-8 font-steelfish text-lg">
+			<ul className="flex flex-1 justify-center items-center gap-8 font-sans text-m">
 				<li>
 					<NavLink
 						to="/"
@@ -84,7 +84,7 @@ const Nav = () => {
 					</NavLink>
 				</li>
 			</ul>
-			<ul className="hidden lg:flex items-center gap-8">
+			<ul className="hidden lg:flex font-sans text-m items-center gap-8">
 				<li>
 					<PiBasketLight className="text-white w-6 h-6"></PiBasketLight>
 				</li>

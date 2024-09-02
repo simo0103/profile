@@ -17,6 +17,15 @@
   src: url('/src/fonts/steelfish/steelfish.otf');
 }
 
+@font-face {
+  font-family: 'LATO';
+  src: url('/src/fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'LATO-BLACK';
+  src: url('/src/fonts/lato/Lato-Black.ttf');
+}
 
 * {
   box-sizing: border-box;
@@ -124,6 +133,10 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+svg {
+  display: inline-block;
 }
 
 @layer base {

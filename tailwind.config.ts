@@ -11,7 +11,7 @@ export const theme = {
     fontSize: {
         xs: ['8px'],
         s: ['12px'],
-        m: ['16PX'],
+        m: ['16px'],
         lg: ['24px'],
         xl: ['32px'],
         xxl: ['48px'],
@@ -23,7 +23,9 @@ export const theme = {
             oswald: ['Oswald', "sans-serif"],
             steelfish: ['STEELFISH', "sans-serif"],
             steelfishOut: ['STEELFISH-OUT', "sans-serif"],
-            steelfishBold: ['STEELFISH-BOLD', "sans-serif"]
+            steelfishBold: ['STEELFISH-BOLD', "sans-serif"],
+            lato: ['LATO', "sans-serif"],
+            latoBlack: ['LATO-BLACK', "sans-serif"],
         },
     },
 }
