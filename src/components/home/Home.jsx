@@ -1,10 +1,8 @@
 import { useRef, useEffect, useState } from "react";
-import mainImage from "./images/shot2.jpeg";
+import mainImage from "./images/shotDesktop.png";
 import mainImageMobile from "./images/shotmobile.png";
 import SubContent from "./SubContent";
 import BestSelling from "./BestSelling";
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 import Socials from "./Socials";
 
 import { LuClipboardList } from "react-icons/lu";
@@ -33,7 +31,11 @@ function Home() {
 				className="relative after:content-['*'] after:absolute after:w-full after:h-full after:bg-black after:top-0 after:left-0 after:opacity-30"
 			>	
 			
-				{!loaded && <Skeleton height="1000px" highlightColor="#000" baseColor="#18181b"/>}
+				{!loaded && 
+				
+					<div role="status" className="skeleton  bg-gray-600 dark:bg-gray-800 animate-pulse w-full aspect-video"></div>
+					
+				}
 				<img
 					ref={banner}
 					srcSet={`${mainImageMobile} 320px, ${mainImageMobile} 680px, ${mainImageMobile} 1025w,  ${mainImage} 1440w`}
@@ -42,7 +44,7 @@ function Home() {
 					style={{ display: loaded ? 'block' : 'none' }}
 				/>
 				{loaded &&
-					<div className="xl:absolute text-center xl:translate-x-[-50%] xl:top-[25%] left-1/2 z-10">
+					<div className="xl:absolute text-center xl:translate-x-[-50%] xl:top-[20%] left-1/2 z-10">
 					
 						<h2 className="text-white uppercase font-steelfishBold text-[80px] wide:text-[100px] mb-8">	
 							real napoletan <span className="text-[78px] wide:text-[96px] uppercase font-steelfishOut">pizza</span>
