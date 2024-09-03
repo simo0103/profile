@@ -1,6 +1,5 @@
 import trancioPizza from "./images/trancioPizza.jpg";
 import { useRef, useEffect, useState } from "react";
-import Skeleton from "./Skeleton";
 
 function SubContent() {
 	const image = useRef(null);
