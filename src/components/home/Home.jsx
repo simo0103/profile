@@ -44,10 +44,10 @@ function Home() {
 					style={{ display: loaded ? 'block' : 'none' }}
 				/>
 				{loaded &&
-					<div className="xl:absolute text-center xl:translate-x-[-50%] xl:top-[20%] left-1/2 z-10">
+					<div className="absolute w-full text-center top-[20%] xl:translate-x-[-50%] xl:top-[20%] xl:left-1/2 z-10">
 					
-						<h2 className="text-white uppercase font-steelfishBold text-[80px] wide:text-[100px] mb-8">	
-							real napoletan <span className="text-[78px] wide:text-[96px] uppercase font-steelfishOut">pizza</span>
+						<h2 className="text-white uppercase font-steelfishBold text-xxl xl:text-[80px] wide:text-[100px] mb-8">	
+							real napoletan <span className="text-[46px] xl:text-[78px] wide:text-[96px] uppercase font-steelfishOut">pizza</span>
 						</h2>
 						
 						<button className="py-4 px-10 rounded-md bg-red-800 text-white wide:text-lg">
@@ -62,22 +62,19 @@ function Home() {
 					<li className="px-4">
 						<LuClipboardList className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Order</p>
-						<span className="text-white text-m">Lorem ipsum dolor sit amet</span>
 					</li>
 					<li className="px-4">
 						<LuVegan className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Vegan</p>
-						<span className="text-white text-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</li>
 					<li className="px-4">
 						<TbTruckDelivery className="text-red-800 text-xl wide:text-xxl mb-8"/>
 						<p className="text-white mb-4 font-latoBlack">Delivery</p>
-						<span className="text-white text-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</li>
 				</ul>
 			</section>
-			<SubContent />
 			<BestSelling />
+			<SubContent />
 		</div>
 	);
 }

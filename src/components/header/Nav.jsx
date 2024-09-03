@@ -12,12 +12,12 @@ const Nav = () => {
 			if (window.scrollY >= 10) {
 				setNavClass("bg-black");
 			} else {
-				setNavClass("bg-transparent");
+				setNavClass("xl:bg-transparent");
 			}
 		});
 	}, [navClass]);
 	return (
-		<nav className={`${navClass} nav flex items-center h-18 py-6 px-8 wide:px-20`}>
+		<nav className={`${navClass} bg-black nav flex items-center h-18 py-6 px-8 wide:px-20`}>
 			<div className="logo hidden lg:flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16 wide:h-20" src={StMariaLogo} />
