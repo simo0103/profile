@@ -47,5 +47,8 @@ export const theme = {
             lato: ['LATO', "sans-serif"],
             latoBlack: ['LATO-BLACK', "sans-serif"],
         },
+        aspectRatio: {
+            '3/2': '3/2',
+          },
     },
 }
