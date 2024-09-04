@@ -153,6 +153,6 @@ svg {
   }
 
   .translate-bezier {
-    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.3s, visibility 0.3s;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.2s, visibility 0.2s;
   }
 }

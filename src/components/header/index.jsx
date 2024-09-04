@@ -6,19 +6,19 @@ import React, {useState, useEffect} from 'react'
 const Header = () => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [isScrolled, setVisible] = useState(true)
-	const [isOnTop, setTop] = useState(false)
+	const [isOnTop, setTop] = useState(true)
 
 
 	const handleScroll = () => {
-		const currentScrollPos = window.scrollY
+		const currentScrollPos = window.scrollY;
 
 		currentScrollPos <= 50 ? setTop(true) : setTop(false);
- 
-		if(currentScrollPos > prevScrollPos){
+		
+		if(currentScrollPos >= prevScrollPos){
 			setVisible(false)
-		}else{
+		}else if(currentScrollPos == 0) {
 			setVisible(true)
-		}
+		} else setVisible(true)
 
 		setPrevScrollPos(currentScrollPos)
 	}
