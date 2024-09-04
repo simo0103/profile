@@ -38,7 +38,7 @@ function Home() {
 				}
 				<img
 					ref={banner}
-					srcSet={`${mainImageMobile} 320px, ${mainImageMobile} 680px, ${mainImageMobile} 1025w,  ${mainImage} 1440w`}
+					srcSet={`${mainImageMobile} 320w, ${mainImageMobile} 680w, ${mainImage} 1025w,  ${mainImage} 1440w`}
 					src={mainImageMobile}
 					alt="pizza"
 					style={{ display: loaded ? 'block' : 'none' }}
