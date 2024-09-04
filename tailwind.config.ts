@@ -18,8 +18,8 @@ export const theme = {
         mega: ['64px']      
     },
     screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
+        'mobile': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
   
         'md': '768px',
         // => @media (min-width: 768px) { ... }

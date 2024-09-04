@@ -5,19 +5,22 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Nav = () => {
-	const [navClass, setNavClass] = useState("");
+	const [scrolling, setScrolling] = useState(false);
 
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			if (window.scrollY >= 10) {
-				setNavClass("bg-black");
-			} else {
-				setNavClass("xl:bg-transparent");
-			}
-		});
-	}, [navClass]);
+	  window.addEventListener('scroll', handleScroll);
+	  return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+  
+	const handleScroll = () => {
+		if (window.scrollY >= 20) {
+			setScrolling(true);
+		} else {
+			setScrolling(false);
+	  	}
+	};
 	return (
-		<nav className={`${navClass} bg-black nav flex items-center h-18 py-6 px-8 wide:px-20`}>
+		<nav aria-hidden="false" className={`${scrolling ? "xl:bg-black" : "xl:bg-transparent"} bg-black flex items-center h-18 py-6 px-8 wide:px-20`}>
 			<div className="logo hidden lg:flex">
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img className="h-16 wide:h-20" src={StMariaLogo} />
