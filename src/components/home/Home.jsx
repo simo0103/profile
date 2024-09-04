@@ -30,19 +30,15 @@ function Home() {
 				id="bannerImage"
 				className="relative after:content-['*'] after:absolute after:w-full after:h-full after:bg-black after:top-0 after:left-0 after:opacity-30"
 			>	
-			
 				{!loaded && 
 				
 					<div role="status" className="skeleton  bg-gray-600 dark:bg-gray-800 animate-pulse w-full aspect-video"></div>
-					
 				}
-				<img
-					ref={banner}
-					srcSet={`${mainImageMobile} 320w, ${mainImageMobile} 680w, ${mainImage} 1025w,  ${mainImage} 1440w`}
-					src={mainImageMobile}
-					alt="pizza"
-					style={{ display: loaded ? 'block' : 'none' }}
-				/>
+				<picture style={{ display: loaded ? 'block' : 'none' }}>
+					<source media="(min-width: 1024px)"  srcSet={mainImage}></source>
+					<img  ref={banner}  src={mainImageMobile} alt="banner pizza"></img>
+				</picture>
+		
 				{loaded &&
 					<div className="absolute w-full text-center top-[20%] xl:translate-x-[-50%] xl:top-[20%] xl:left-1/2 z-10">
 					
