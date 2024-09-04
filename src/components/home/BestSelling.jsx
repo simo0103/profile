@@ -26,6 +26,12 @@ function BestSelling() {
 					ref={ref}
 					className="px-4 xl:px-20 wide:px-80 text-white xl:pb-20"
 				>
+					{" "}
+					{!loaded && (
+						<>
+							<div className="h-[50px] w-full mx-auto bg-gray-600 rounded-full dark:bg-gray-800 mb-10"></div>
+						</>
+					)}
 					<h2
 						style={{ visibility: loaded ? "visible" : "hidden" }}
 						className="text-center text-xxl xl:text-mega wide:text-xxl font-steelfishBold mb-10 font-bold"

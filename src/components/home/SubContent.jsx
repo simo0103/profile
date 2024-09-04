@@ -33,7 +33,10 @@ function SubContent() {
 				id="subcontent"
 				className="content py-20 px-2 xl:px-20 wide:px-80 xl:flex items-center gap-8"
 			>
-				<p className="text-white font-serif text-center mb-8 xl:mb-0 text-m wide:leading-10 wide:px-8 xl:text-xl">
+				<p
+					style={{ display: loaded ? "block" : "none" }}
+					className="text-white font-serif text-center mb-8 xl:mb-0 text-m wide:leading-10 wide:px-8 xl:text-xl"
+				>
 					The pizza served in Santa Maria is exactly the same as the pizza you
 					can eat on the streets of Naples using the same ingredients and
 					adopting the same cooking method
