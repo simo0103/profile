@@ -40,7 +40,7 @@ const Header = () => {
 			>
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img
-					className={`"${isOnTop ? " h-16 " : " h-8 "} transition ease-in delay-1000 duration-1000 "`}
+					className={`"${isOnTop ? " h-16 " : " h-8 "} transition-height "`}
 					src={StMariaLogo}
 				/>
 			</div>
