@@ -1,11 +1,12 @@
 import trancioPizza from "./images/trancioPizza.jpg";
 import { useRef, useEffect, useState } from "react";
+import { motion, useScroll } from "framer-motion"
 
 function SubContent() {
 	const image = useRef(null);
 	const [loaded, setLoaded] = useState(false);
 	const onImageLoaded = () => setLoaded(true);
-
+	const text = "The pizza served in Santa Maria is exactly the same as the pizza you can eat on the streets of Naples using the same ingredients and adopting the same cooking method".split(" ");
 	useEffect(() => {
 		const imageCurrent = image.current;
 		if (imageCurrent) {
@@ -37,9 +38,19 @@ function SubContent() {
 					style={{ display: loaded ? "block" : "none" }}
 					className="text-white font-serif text-center mb-8 xl:mb-0 text-m wide:leading-10 wide:px-8 xl:text-xl"
 				>
-					The pizza served in Santa Maria is exactly the same as the pizza you
-					can eat on the streets of Naples using the same ingredients and
-					adopting the same cooking method
+				{text.map((el, i) => (
+						<motion.span
+							initial={{ opacity: 0 }}
+							whileInView={{ opacity: 1 }}
+							transition={{
+								duration: 0.2,
+								delay: i / 30,
+							}}
+							key={i}
+						>
+							{el}{" "}
+						</motion.span>
+					))}
 				</p>
 				<img
 					ref={image}

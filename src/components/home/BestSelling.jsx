@@ -1,7 +1,7 @@
 import Pizza1 from "./images/bestpizza.jpg";
 import Pizza2 from "./images/bestpizza2.jpg";
 import Pizza3 from "./images/bestpizza.jpg";
-import { motion, useScroll, useTime } from "framer-motion"
+import { motion, useScroll } from "framer-motion"
 import { useRef, useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 
