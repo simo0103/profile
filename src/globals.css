@@ -157,6 +157,6 @@ svg {
   }
 
   .transition-height {
-    transition: ease 0.2s height;
+    transition: ease 0.3s height;
   }
 }

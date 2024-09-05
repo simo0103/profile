@@ -1,6 +1,7 @@
 import Pizza1 from "./images/bestpizza.jpg";
 import Pizza2 from "./images/bestpizza2.jpg";
 import Pizza3 from "./images/bestpizza.jpg";
+import { motion, useScroll, useTime } from "framer-motion"
 import { useRef, useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 
@@ -8,6 +9,7 @@ function BestSelling() {
 	const image = useRef(null);
 	const [loaded, setLoaded] = useState(false);
 	const onImageLoaded = () => setLoaded(true);
+	const { scrollYProgress } = useScroll();
 
 	useEffect(() => {
 		const imageCurrent = image.current;
@@ -40,7 +42,10 @@ function BestSelling() {
 						Our best selling pizzas
 					</h2>
 					<div className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+						<motion.div   
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -69,8 +74,11 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+					</motion.div>
+						<motion.div 
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -99,8 +107,11 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+						</motion.div>
+						<motion.div   
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -129,8 +140,11 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+						</motion.div>
+						<motion.div   
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -159,8 +173,11 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+						</motion.div>
+						<motion.div   
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -189,8 +206,11 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
-						<div className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
+						</motion.div>
+						<motion.div   
+							initial={{ opacity: 0 , transition:{duration: 1}}}
+							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
 									<div
@@ -219,7 +239,7 @@ function BestSelling() {
 							<button className="capitalize py-2 xl:py-4 px-4 text-s xl:text-m xl:px-10 rounded-md width-full bg-red-800">
 								add to cart
 							</button>
-						</div>
+						</motion.div>
 					</div>
 				</section>
 			)}
