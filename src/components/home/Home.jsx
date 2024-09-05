@@ -56,16 +56,16 @@ function Home() {
 				)}
 			</div>
 			<section>
-				<ul className="flex gap-6 justify-center text-center w-2/4 mx-auto my-20">
-					<li className="px-4">
+				<ul className="flex gap-6 justify-center text-center w-3/4 mx-auto my-20">
+					<li className="w-[100px]">
 						<LuClipboardList className="text-red-800 text-xl wide:text-xxl mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Order</p>
 					</li>
-					<li className="px-4">
+					<li className="w-[100px]">
 						<LuVegan className="text-red-800 text-xl wide:text-xxl mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Vegan</p>
 					</li>
-					<li className="px-4">
+					<li className="w-[100px]">
 						<TbTruckDelivery className="text-red-800 text-xl wide:text-xxl mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Delivery</p>
 					</li>

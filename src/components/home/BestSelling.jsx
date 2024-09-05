@@ -43,8 +43,8 @@ function BestSelling() {
 					</h2>
 					<div className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -76,8 +76,8 @@ function BestSelling() {
 							</button>
 					</motion.div>
 						<motion.div 
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -109,8 +109,8 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -142,8 +142,8 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -175,8 +175,8 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -208,8 +208,8 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ opacity: 1, transition:{duration: 1} }} 
+							initial={{ opacity: 0 , transition:{duration: 1.5}}}
+							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
