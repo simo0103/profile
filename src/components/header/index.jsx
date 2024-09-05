@@ -9,7 +9,10 @@ const Header = () => {
 
 	const controlNavbar = () => {
 		window.scrollY <= 50 ? setTop(true) : setTop(false);
-		if (window.scrollY > lastScrollY && lastScrollY >= 0) {
+		const isBottomPage =
+			window.innerHeight + Math.round(window.scrollY) >=
+			document.body.offsetHeight;
+		if ((window.scrollY > lastScrollY && lastScrollY >= 0) || isBottomPage) {
 			// if scroll down hide the navbar
 			setShow(false);
 		} else {
@@ -37,7 +40,7 @@ const Header = () => {
 			>
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img
-					className={`"${isOnTop ? " h-16 " : " h-8 "} wide:h-20"`}
+					className={`"${isOnTop ? " h-16 " : " h-8 "} transition ease-in delay-1000 duration-1000 "`}
 					src={StMariaLogo}
 				/>
 			</div>
