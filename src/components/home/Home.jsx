@@ -8,6 +8,7 @@ import Socials from "./Socials";
 import { LuClipboardList } from "react-icons/lu";
 import { LuVegan } from "react-icons/lu";
 import { TbTruckDelivery } from "react-icons/tb";
+import AboutUs from "./AboutUs";
 
 function Home() {
 	const banner = useRef(null);
@@ -56,23 +57,24 @@ function Home() {
 				)}
 			</div>
 			<section>
-				<ul className="flex gap-6 justify-center text-center w-3/4 mx-auto my-20">
+				<ul className="flex gap-6 justify-center text-center w-3/4 mx-auto my-5 xl:my-20">
 					<li className="w-[100px]">
-						<LuClipboardList className="text-red-800 text-xl wide:text-xxl mb-8" />
+						<LuClipboardList className="text-red-800 text-xl wide:text-xxl mb-4 xl:mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Order</p>
 					</li>
 					<li className="w-[100px]">
-						<LuVegan className="text-red-800 text-xl wide:text-xxl mb-8" />
+						<LuVegan className="text-red-800 text-xl wide:text-xxl mb-4 xl:mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Vegan</p>
 					</li>
 					<li className="w-[100px]">
-						<TbTruckDelivery className="text-red-800 text-xl wide:text-xxl mb-8" />
+						<TbTruckDelivery className="text-red-800 text-xl wide:text-xxl mb-4 xl:mb-8" />
 						<p className="text-white mb-4 font-latoBlack">Delivery</p>
 					</li>
 				</ul>
 			</section>
 			<BestSelling />
 			<SubContent />
+			<AboutUs />
 		</div>
 	);
 }

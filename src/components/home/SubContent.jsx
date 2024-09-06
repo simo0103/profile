@@ -32,11 +32,11 @@ function SubContent() {
 			)}
 			<section
 				id="subcontent"
-				className="content py-20 px-2 xl:px-20 wide:px-80 xl:flex items-center gap-8"
+				className="content pt-20 pb-10 px-2 xl:px-20 wide:px-80 xl:flex items-center gap-8"
 			>
 				<p
 					style={{ display: loaded ? "block" : "none" }}
-					className="text-white font-serif text-center mb-8 xl:mb-0 text-m wide:leading-10 wide:px-8 xl:text-xl"
+					className="text-white font-oswald text-center mb-8 xl:mb-0 text-m wide:leading-10 wide:px-8 xl:text-xl"
 				>
 				{text.map((el, i) => (
 						<motion.span

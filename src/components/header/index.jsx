@@ -45,7 +45,7 @@ const Header = () => {
 				/>
 			</div>
 			<header
-				className={`"${show ? "mobile:translate-bezier" : " mobile:invisible mobile:translate-y-full mobile:translate-bezier "} mobile:bottom-[-60px] mobile:pb-[60px] mp-safe fixed lg:pb-inset left-0 right-0 lg:top-0 lg:bottom-auto width-full z-50 "`}
+				className={`"${show ? "mobile:translate-bezier " : " mobile:invisible mobile:translate-y-full mobile:translate-bezier "} mobile:bottom-[-60px] mobile:pb-[60px] mp-safe fixed lg:pb-inset left-0 right-0 lg:top-0 lg:bottom-auto width-full z-50 "`}
 			>
 				<Nav />
 			</header>
