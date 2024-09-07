@@ -27,7 +27,9 @@ function AboutUs() {
 					<div className="flex-1 aspect-[4/3] bg-gray-600 rounded dark:bg-gray-800"></div>
 				</div>
 			)}
-			<motion.section style={{ scaleX: scrollYProgress }}
+			<motion.section 
+				style={{ scaleX: scrollYProgress }}
+				viewport={{ once: true }}
 				id="AboutUs"
 				className="text-center content pt-2 xl:py-20 pb-8 px-2 items-center gap-8 xl:px-20 wide:px-80"
 			>

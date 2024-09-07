@@ -1,7 +1,7 @@
 import Pizza1 from "./images/bestpizza.jpg";
 import Pizza2 from "./images/bestpizza2.jpg";
 import Pizza3 from "./images/bestpizza.jpg";
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import { useRef, useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 
@@ -9,7 +9,6 @@ function BestSelling() {
 	const image = useRef(null);
 	const [loaded, setLoaded] = useState(false);
 	const onImageLoaded = () => setLoaded(true);
-	const { scrollYProgress } = useScroll();
 
 	useEffect(() => {
 		const imageCurrent = image.current;
@@ -43,8 +42,9 @@ function BestSelling() {
 					</h2>
 					<div className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+							initial={{y: 50, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1, transition:{delay: 1, duration: 2}}} 
+							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -57,7 +57,7 @@ function BestSelling() {
 							)}
 							<img
 								ref={image}
-								style={{ display: loaded ? "block" : "none" }}
+								style={{ display: loaded ? "opacity: '1'; transition: 'opacity 2s'" : "opacity: '0'" }}
 								className="mb-4 rounded-t-lg"
 								width="100%"
 								src={Pizza1}
@@ -76,8 +76,9 @@ function BestSelling() {
 							</button>
 					</motion.div>
 						<motion.div 
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+								initial={{y: 50, opacity: 0 }}
+								whileInView={{ y: 0, opacity: 1, transition:{delay: 1, duration: 2}}} 
+								viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -90,7 +91,7 @@ function BestSelling() {
 							)}
 							<img
 								ref={image}
-								style={{ display: loaded ? "block" : "none" }}
+								style={{ display: loaded ? "opacity: '1'; transition: 'opacity 2s'" : "opacity: '0'" }}
 								className="mb-4 rounded-t-lg"
 								width="100%"
 								src={Pizza2}
@@ -109,8 +110,9 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+							initial={{y: 50, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1, transition:{delay: 1, duration: 2}}} 
+							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -123,7 +125,7 @@ function BestSelling() {
 							)}
 							<img
 								ref={image}
-								style={{ display: loaded ? "block" : "none" }}
+								style={{ display: loaded ? "opacity: '1'; transition: 'opacity 2s'" : "opacity: '0'" }}
 								className="mb-4 rounded-t-lg"
 								width="100%"
 								src={Pizza3}
@@ -142,8 +144,9 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+							initial={{y: 50, opacity: 0 , transition:{duration: 2}}}
+							whileInView={{ y: 0, opacity: 1, transition:{duration: 2}}} 
+							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -175,8 +178,9 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+							initial={{y: 50, opacity: 0 , transition:{duration: 2}}}
+							whileInView={{ y: 0, opacity: 1, transition:{duration: 2}}} 
+							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
@@ -208,8 +212,9 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{ opacity: 0 , transition:{duration: 1.5}}}
-							whileInView={{ opacity: 1, transition:{duration: 1.5}}} 
+							initial={{y: 50, opacity: 0 , transition:{duration: 2}}}
+							whileInView={{ y: 0, opacity: 1, transition:{duration: 2}}} 
+							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
 								<>
