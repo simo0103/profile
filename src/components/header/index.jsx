@@ -1,8 +1,11 @@
 import Nav from "./Nav";
 import StMariaLogo from "/smariawhite.svg";
 import React, { useState, useEffect } from "react";
+// import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+	// let location = useLocation();
+	// let isHome = location.pathname == "/";
 	const [show, setShow] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isOnTop, setTop] = useState(true);
