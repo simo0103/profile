@@ -42,7 +42,7 @@ function BestSelling() {
 					</h2>
 					<div className="grid grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-8">
 						<motion.div   
-							initial={{y: 100, opacity: 0 }}
+							initial={{y: 60, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1, transition:{delay: 0.5, duration: 1}}}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
@@ -75,7 +75,7 @@ function BestSelling() {
 							</button>
 					</motion.div>
 						<motion.div 
-								initial={{y: 100, opacity: 0 }}
+								initial={{y: 60, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1, transition:{delay: 0.5, duration: 1}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
@@ -108,7 +108,7 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{y: 100, opacity: 0 }}
+							initial={{y: 60, opacity: 0 }}
 							whileInView={{ y: 0, opacity: 1, transition:{delay: 0.5, duration: 1}}}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
@@ -141,7 +141,7 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{y: 100, opacity: 0 , transition:{duration: 1}}}
+							initial={{y: 60, opacity: 0 , transition:{duration: 1}}}
 							whileInView={{ y: 0, opacity: 1, transition:{duration: 1}}}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
@@ -174,7 +174,7 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{y: 100, opacity: 0 , transition:{duration: 1}}}
+							initial={{y: 60, opacity: 0 , transition:{duration: 1}}}
 							whileInView={{ y: 0, opacity: 1, transition:{duration: 1}}}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
@@ -207,7 +207,7 @@ function BestSelling() {
 							</button>
 						</motion.div>
 						<motion.div   
-							initial={{y: 100, opacity: 0 , transition:{duration: 1}}}
+							initial={{y: 60, opacity: 0 , transition:{duration: 1}}}
 							whileInView={{ y: 0, opacity: 1, transition:{duration: 1}}}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (

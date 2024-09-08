@@ -3,8 +3,7 @@ import mainImage from "./images/shotDesktop.png";
 import mainImageMobile from "./images/shotmobile.png";
 import SubContent from "./SubContent";
 import BestSelling from "./BestSelling";
-import Socials from "./Socials";
-
+import Socials from "./Socials"; 
 import { LuClipboardList } from "react-icons/lu";
 import { LuVegan } from "react-icons/lu";
 import { TbTruckDelivery } from "react-icons/tb";

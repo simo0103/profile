@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import StMariaLogo from "/smariawhite.svg";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import { useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -9,6 +9,17 @@ const Header = () => {
 	const [show, setShow] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isOnTop, setTop] = useState(true);
+	const logo = useRef(null);
+	const [loaded, setLoad] = useState(false);
+	const onLogoLoad = () => setLoad(true);
+	useEffect(() => {
+		const logoCurrent = logo.current;
+
+		if (logoCurrent) {
+			logoCurrent.addEventListener("load", onLogoLoad);
+			return () => logoCurrent.removeEventListener("load", onLogoLoad);
+		}
+	}, [logo]);
 
 	const controlNavbar = () => {
 		window.scrollY <= 50 ? setTop(true) : setTop(false);
@@ -16,21 +27,15 @@ const Header = () => {
 			window.innerHeight + Math.round(window.scrollY) >=
 			document.body.offsetHeight;
 		if ((window.scrollY > lastScrollY && lastScrollY >= 0) || isBottomPage) {
-			// if scroll down hide the navbar
 			setShow(false);
 		} else {
-			// if scroll up show the navbar
 			setShow(true);
 		}
-
-		// remember current page location to use in the next move
 		setLastScrollY(window.scrollY);
 	};
 
 	useEffect(() => {
 		window.addEventListener("scroll", controlNavbar);
-
-		// cleanup function
 		return () => {
 			window.removeEventListener("scroll", controlNavbar);
 		};
@@ -38,11 +43,19 @@ const Header = () => {
 
 	return (
 		<>
+			{!loaded && (
+				<div
+					role="status"
+					className="skeleton bg-gray-600 dark:bg-gray-800 animate-pulse w-3/5 h-16 fixed center-translateX top-0"
+				></div>
+			)}
 			<div
+				style={{ display: loaded ? "flex" : "none" }}
 				className={`"${isOnTop ? " h-[100px]" : " h-[50px] bg-black"} logo z-50 flex justify-center w-full  items-center lg:hidden fixed "`}
 			>
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img
+				 	ref={logo} 
 					className={`"${isOnTop ? " h-16 " : " h-8 "} transition-height "`}
 					src={StMariaLogo}
 				/>

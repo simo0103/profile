@@ -127,12 +127,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 svg {
@@ -140,23 +140,28 @@ svg {
 }
 
 @layer base {
-  html {
-    -webkit-tap-highlight-color: transparent;
-  }
+    html {
+      -webkit-tap-highlight-color: transparent;
+    }
 }
 
 @layer utilities {
-  .mp-safe {
-    margin-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
-  }
+    .mp-safe {
+      margin-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
 
-  .translate-bezier {
-    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.2s, visibility 0.2s;
-  }
+    .translate-bezier {
+      transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) transform 0.2s, visibility 0.2s;
+    }
 
-  .transition-height {
-    transition: ease 0.3s height;
-  }
+    .transition-height {
+      transition: ease 0.3s height;
+    }
+
+	.center-translateX {
+		transform: translateX(-50%);
+		left: 50%;
+	}
 }
