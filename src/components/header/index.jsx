@@ -50,8 +50,7 @@ const Header = () => {
 				></div>
 			)}
 			<div
-				style={{ display: loaded ? "flex" : "none" }}
-				className={`"${isOnTop ? " h-[100px]" : " h-[50px] bg-black"} logo z-50 flex justify-center w-full  items-center lg:hidden fixed "`}
+				className={`"${isOnTop ? " h-[100px]" : " h-[50px] bg-black"} ${loaded ? "mobile:flex" : "hidden"} logo z-50 flex justify-center w-full  items-center lg:hidden fixed "`}
 			>
 				<h1 className="opacity-0 h-0 w-0 ">Santa Maria</h1>
 				<img
