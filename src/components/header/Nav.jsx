@@ -1,4 +1,3 @@
-// import { gsap } from "react-icons/fa6";
 import { PiBasketLight } from "react-icons/pi";
 import StMariaLogo from "/smariawhite.svg";
 import { NavLink } from "react-router-dom";

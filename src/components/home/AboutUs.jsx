@@ -31,7 +31,7 @@ function AboutUs() {
 				style={{ scaleX: scrollYProgress }}
 				viewport={{ once: true }}
 				id="AboutUs"
-				className="text-center content pt-2 xl:py-20 pb-8 px-2 items-center gap-8 xl:px-20 wide:px-80"
+				className="text-center content pt-2 xl:pt-20 px-2 items-center gap-8 xl:px-20 wide:px-80"
 			>
 				<h2
 					style={{ display: loaded ? "block" : "none" }}

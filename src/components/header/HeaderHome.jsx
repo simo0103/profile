@@ -1,11 +1,8 @@
 import Nav from "./Nav";
 import StMariaLogo from "/smariawhite.svg";
 import React, { useState, useEffect, useRef } from "react";
-// import { useLocation } from 'react-router-dom';
 
-const Header = () => {
-	// let location = useLocation();
-	// let isHome = location.pathname == "/";
+const HeaderHome = () => {
 	const [show, setShow] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const [isOnTop, setTop] = useState(true);
@@ -46,7 +43,7 @@ const Header = () => {
 			{!loaded && (
 				<div
 					role="status"
-					className="skeleton bg-gray-600 dark:bg-gray-800 animate-pulse w-3/5 h-16 fixed center-translateX top-0"
+					className="skeleton bg-gray-600 dark:bg-gray-800 animate-pulse w-3/5 h-16 fixed center-translateX top-0 xl:hidden"
 				></div>
 			)}
 			<div
@@ -68,4 +65,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HeaderHome;

@@ -1,18 +1,22 @@
 import "./App.css";
-import Header from "./components/header";
+import HeaderHome from "./components/header/HeaderHome";
+import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
 import BookTable from "./components/BookTable";
 import Ourstory from "./components/Ourstory";
 import Menu from "./components/Menu";
 import Orderonline from "./components/orderonline/OrderOnline";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
+	let location = useLocation();
+	let isHome = location.pathname == "/";
+	const background = isHome ? " bg-black" : "";
 	return (
 		<>
-			<Header />
-			<main>
+			{isHome ? <HeaderHome /> : <Header />}
+			<main className={`"${background} pb-16 "`}>
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
 					<Route path="/booktable" element={<BookTable />}></Route>
