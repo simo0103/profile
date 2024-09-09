@@ -3,10 +3,10 @@ import HeaderHome from "./components/header/HeaderHome";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import Home from "./components/home/Home";
-import BookTable from "./components/BookTable";
+import BookTable from "./components/booktable";
 import Ourstory from "./components/Ourstory";
 import Menu from "./components/Menu";
-import Orderonline from "./components/orderonline/OrderOnline";
+import Orderonline from "./components/OrderOnline";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {

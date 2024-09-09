@@ -3,10 +3,10 @@ import outside1 from "./images/outside1.jpg";
 import outside2 from "./images/outside2.jpg";
 import { FaAngleRight } from "react-icons/fa6";
 
-const OrderOnline = () => {
+const BookTable = () => {
 	return (
-		<section id="orderOnline" className="mx-8">
-			<h3 className="text-xl capitalize font-bold">collect at</h3>
+		<section id="BookTable" className="mx-8">
+			<h3 className="text-xl font-bold">Our restaurants</h3>
 			<ul className="flex mt-8 gap-8 mobile:flex-wrap">
 				<li className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cursor-pointer">
 					<img class="rounded-t-lg" src={outside1} alt="pizzeria outside" />
@@ -57,4 +57,4 @@ const OrderOnline = () => {
 	)
 }
 
-export default OrderOnline;
+export default BookTable;
