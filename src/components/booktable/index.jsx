@@ -2,13 +2,11 @@ import outside1 from "./images/outside1.jpg";
 import outside2 from "./images/outside2.jpg";
 import { FaAngleRight } from "react-icons/fa6";
 import { useState } from "react";
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import CalendarComponent from "./CalendarComponent";
 
 
 const BookTable = () => {
 	const [showModal, setShowModal] = useState(false);
-	const [startDate, setStartDate] = useState(new Date());
 
 	return (
 		<section id="BookTable" className="mx-8 relative">
@@ -29,7 +27,7 @@ const BookTable = () => {
 									</button>
 								</div>
 								<div className="p-4 md:p-5 space-y-4">
-								<Calendar onChange={setStartDate} value={startDate} />    
+								<CalendarComponent />   
 
 								</div>
 
