@@ -9,6 +9,9 @@ function BestSelling() {
 	const image = useRef(null);
 	const [loaded, setLoaded] = useState(false);
 	const onImageLoaded = () => setLoaded(true);
+	let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+	let delayAnimation = isMobile ? 0 : 0.5;
 
 	useEffect(() => {
 		const imageCurrent = image.current;
@@ -76,7 +79,7 @@ function BestSelling() {
 							</button>
 					</motion.div>
 						<motion.div 
-								initial={{y: 60, opacity: 0 }}
+								initial={{y: 60, opacity: 0, transition:{duration: 1} }}
 								viewport={{ once: true }}
 								whileInView={{ y: 0, opacity: 1, transition:{delay: 0.5, duration: 1}}} 
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
@@ -111,7 +114,7 @@ function BestSelling() {
 						</motion.div>
 						<motion.div   
 							initial={{y: 60, opacity: 0 , transition:{duration: 1}}}
-							whileInView={{ y: 0, opacity: 1, transition:{duration: 1}}}
+							whileInView={{ y: 0, opacity: 1, transition:{delay: delayAnimation, duration: 1}}}
 							viewport={{ once: true }}
 							className="card rounded-lg bg-zinc-900 pb-4 xl:pb-8 text-center">
 							{!loaded && (
