@@ -2,7 +2,7 @@ import outside1 from "./images/outside1.jpg";
 import outside2 from "./images/outside2.jpg";
 import { FaAngleRight } from "react-icons/fa6";
 import { useState } from "react";
-import CalendarComponent from "./CalendarComponent";
+import CalendarComponent from "./calendar/CalendarComponent";
 
 
 const BookTable = () => {
@@ -13,11 +13,11 @@ const BookTable = () => {
 			{
 				showModal ? (
 					<>
-						<div className="absolute center-translateX p-4 w-full max-w-2xl top-0 max-h-full">
+						<div className="absolute center-translateX p-4 w-full max-w-2xl top-[-50px] xl:top-0 max-h-full">
 							<div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
 								<div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-									<h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-										Terms of Service
+									<h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+										Book your table
 									</h3>
 									<button type="button" onClick={() => setShowModal(false)} className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
 										<svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -32,7 +32,7 @@ const BookTable = () => {
 								</div>
 
 								<div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-									<button data-modal-hide="default-modal" type="button" className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+									<button data-modal-hide="default-modal" type="button" className="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Book now</button>
 								</div>
 							</div>
 						</div>

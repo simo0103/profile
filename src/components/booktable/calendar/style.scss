@@ -1,0 +1,18 @@
+abbr[title] {
+    text-decoration: none;
+}
+
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background-color: black;
+}
+
+.react-calendar__tile--now {
+    background-color: #d4d5d5;
+}
+
+.react-calendar,
+button {
+    border-radius: 5px;
+}
