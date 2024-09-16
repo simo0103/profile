@@ -7,8 +7,6 @@ import Polpette from './images/polpettine-al-sugo.jpg';
 import Salad from './images/salad.jpg';
 import Apetizer from './images/apetizer.jpg';
 
-
-
 const menu = [
     {
         id: 1,

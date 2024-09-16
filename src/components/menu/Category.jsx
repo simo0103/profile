@@ -1,22 +1,52 @@
 import menu from './menuList/data';
 import { LuLeaf } from 'react-icons/lu';
 import { PiPepper } from 'react-icons/pi';
+import { useRef, useEffect, useState } from 'react';
 
 const Category = ({ categoryName }) => {
     const filteredCategories = menu.filter(
         (item) => item.category == categoryName
     );
+        
+    const image = useRef(null);
+    const [loaded, setLoaded] = useState(false);
+    const onImageLoaded = () => setLoaded(true);
+
+    useEffect(() => {
+        const imageCurrent = image.current;
+
+        if (imageCurrent) {
+            imageCurrent.addEventListener('load', onImageLoaded);
+            return () => imageCurrent.removeEventListener('load', onImageLoaded);
+        }
+    }, [image]);
+
     return (
         <>
             {filteredCategories.map((i) => {
                 return (
                     <div key={i.id}>
+                        {!loaded && (
+                            <>
+                                <div
+                                    role="status"
+                                    className="skeleton my-6 bg-slate-50 dark:bg-slate-100 rounded-t-lg animate-pulse aspect-video"
+                                ></div>
+                                <div className="h-[40px] w-2/4 bg-slate-50 rounded-full dark:bg-slate-100 mb-4"></div>
+                                <div className="h-[15px] w-3/4 bg-slate-50 rounded-full dark:bg-slate-100 mb-2"></div>
+                                <div className="h-[15px] w-3/4 bg-slate-50 rounded-full dark:bg-slate-100 mb-4"></div>
+                                <div className="h-[40px] w-full mx-auto bg-slate-50 rounded-md dark:bg-slate-100 mb-4"></div>
+                            </>
+                        )}
                         <div className="relative flex flex-col my-6 bg-white shadow-secondary-1 shadow-lg border border-slate-200 rounded-lg">
                             <div className="relative m-2.5">
                                 <img
+                                    id={i.category}
+                                    ref={image}
+                                    style={{ opacity: loaded ? '1' : '0' }}
                                     className="rounded-t-lg"
                                     width="100%"
-                                    src= {i.img}
+                                    src={i.img}
                                 ></img>
                             </div>
 

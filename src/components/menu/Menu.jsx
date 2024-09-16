@@ -36,7 +36,7 @@ const Menu = () => {
                             key={index}
                             id={cat.value}
                             onClick={handleClick}
-                            className={`" ${activeCategory == cat.value ? " active bg-red-800 " : " bg-black " }  cursor-pointer py-2 px-6 rounded-full text-white "`}
+                            className={`" ${activeCategory == cat.value ? ' active bg-red-800 ' : ' bg-black '}  cursor-pointer py-2 px-6 rounded-full text-white "`}
                         >
                             {cat.label}
                         </li>
