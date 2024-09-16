@@ -1,11 +1,22 @@
+import Pizza from './images/margherita.jpg';
+import Pizza1 from './images/pizza_pepperoni.jpg';
+import Pizza2 from './images/pizza_marinara.jpg';
+import Polenta from './images/polenta.jpg';
+import Spaghetti from './images/spaghetti.jpg';
+import Polpette from './images/polpettine-al-sugo.jpg';
+import Salad from './images/salad.jpg';
+import Apetizer from './images/apetizer.jpg';
+
+
+
 const menu = [
     {
         id: 1,
         title: 'margherita',
         category: 'pizza',
         price: 10.99,
-        img: './images/item-1.jpeg',
-        desc: `Tomato, fior di latte mozzarella, basil, Parmesan, olive oil`,
+        img: Pizza,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: ''
     },
     {
@@ -13,8 +24,8 @@ const menu = [
         title: 'vegan margherita',
         category: 'pizza',
         price: 10.99,
-        img: './images/item-1.jpeg',
-        desc: `Tomato, vegan burrata, basil, Parmesan, olive oil`,
+        img: Pizza1,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'vegan'
     },
     {
@@ -22,16 +33,16 @@ const menu = [
         title: 'mushroom',
         category: 'pizza',
         price: 16.99,
-        img: './images/item-3.jpeg',
-        desc: `A truffle ricotta base with mozzarella, sautéed mushrooms & Parmesan`
+        img: Pizza,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
     },
     {
         id: 4,
         title: 'salsiccia and friarelli',
         category: 'pizza',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Italian roasted sausage with wild broccoletti on an olive oil base with smoked mozzarella & fresh chilli`,
+        img: Pizza2,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'spicy'
     },
     {
@@ -39,8 +50,8 @@ const menu = [
         title: 'Formaggi',
         category: 'pizza',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Tomato Sauce · Mozzarella · Parmesan · Mascarpone · Gorgonzola`,
+        img: Pizza1,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: ''
     },
     {
@@ -48,8 +59,8 @@ const menu = [
         title: 'salsiccia and friarelli',
         category: 'pizza',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Italian roasted sausage with wild broccoletti on an olive oil base with smoked mozzarella & fresh chilli`,
+        img: Pizza2,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'spicy'
     },
     {
@@ -57,27 +68,54 @@ const menu = [
         title: 'salsiccia and friarelli',
         category: 'pizza',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Italian roasted sausage with wild broccoletti on an olive oil base with smoked mozzarella & fresh chilli`,
+        img: Pizza,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'spicy'
     },
     {
         id: 8,
-        title: 'salsiccia and friarelli',
+        title: 'Caesar salad',
         category: 'salads',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Italian roasted sausage with wild broccoletti on an olive oil base with smoked mozzarella & fresh chilli`,
+        img: Salad,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'spicy'
     },
     {
         id: 9,
-        title: 'salsiccia and friarelli',
+        title: 'Crostini',
         category: 'apetizers',
         price: 18.99,
-        img: './images/item-4.jpeg',
-        desc: `Italian roasted sausage with wild broccoletti on an olive oil base with smoked mozzarella & fresh chilli`,
+        img: Apetizer,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
         tag: 'spicy'
+    },
+    {
+        id: 10,
+        title: 'Polenta with Ragù',
+        category: 'mainCourses',
+        price: 18.99,
+        img: Polenta,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        tag: ''
+    },
+    {
+        id: 11,
+        title: 'garlic and oil',
+        category: 'mainCourses',
+        price: 18.99,
+        img: Spaghetti,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        tag: ''
+    },
+    {
+        id: 12,
+        title: 'meatballs',
+        category: 'mainCourses',
+        price: 18.99,
+        img: Polpette,
+        desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        tag: ''
     }
 ];
 export default menu;
