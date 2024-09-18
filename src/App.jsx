@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import Footer from './components/Footer';
 import Home from './components/home/Home';
 import BookTable from './components/booktable';
-import Ourstory from './components/Ourstory';
+import Ourstory from './components/ourstory/Ourstory';
 import Menu from './components/menu/Menu';
 import Orderonline from './components/OrderOnline';
 import { Routes, Route, useLocation } from 'react-router-dom';

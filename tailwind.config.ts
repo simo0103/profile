@@ -15,23 +15,23 @@ export const theme = {
         mega: ['64px']
     },
     screens: {
-        mobile: { max: '1023px' },
+        'mobile': { max: '1023px' },
         // => @media (max-width: 1023px) { ... }
 
-        md: '768px',
+        'md': '768px',
         // => @media (min-width: 768px) { ... }
 
-        lg: '1024px',
+        'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
 
-        xl: '1280px',
+        'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
 
-        '2xl': '1536px',
+        'xxl': '1536px',
         // => @media (min-width: 1536px) { ... }
-        wide: '1980px',
+        'wide': '1980px',
         // => @media (min-width: 1980px) { ... }
-        '2k': '2560'
+        'ultrawide': '2560px'
         // => @media (min-width: 2560px) { ... }
     },
     extend: {

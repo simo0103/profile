@@ -1,6 +1,6 @@
 import Home from './home/Home';
 import BookTable from './booktable/BookTable';
-import Ourstory from './Ourstory';
+import Ourstory from './ourstory/Ourstory';
 import Menu from './menu/Menu';
 import OrderOnline from './OrderOnline';
 

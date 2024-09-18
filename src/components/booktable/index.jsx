@@ -8,7 +8,7 @@ const BookTable = () => {
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <section id="BookTable" className="mx-8 relative">
+        <section id="BookTable" className="mx-4 wide:mx-8 relative">
             {showModal ? (
                 <>
                     <div className="absolute center-translateX p-4 w-full max-w-2xl top-[-50px] xl:top-0 max-h-full">

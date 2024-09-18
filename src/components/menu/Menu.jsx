@@ -26,24 +26,24 @@ const Menu = () => {
         setCategory(currentSelected);
     };
     return (
-        <section id="ourMenu" className="mx-8">
+        <section id="ourMenu" className="mx-4 wide:mx-8">
             <h2 className="text-xl font-bold mb-8">Our Menu</h2>
 
-            <ul className="flex gap-2">
+            <ul className="flex gap-2 mobile:overflow-x-scroll">
                 {categories.map((cat, index) => {
                     return (
                         <li
                             key={index}
                             id={cat.value}
                             onClick={handleClick}
-                            className={`" ${activeCategory == cat.value ? ' active bg-red-800 ' : ' bg-black '}  cursor-pointer py-2 px-6 rounded-full text-white "`}
+                            className={`" ${activeCategory == cat.value ? ' active bg-red-800 ' : ' bg-black '} mobile:mb-2 text-nowrap cursor-pointer py-1 wide:py-2 px-6 rounded-full text-white "`}
                         >
                             {cat.label}
                         </li>
                     );
                 })}
             </ul>
-            <div className="grid gap-2 grid-cols-3 wide:grid-cols-4">
+            <div className="grid gap-2 grid-cols-2 xl:grid-cols-4  ultrawide:grid-cols-5">
                 <Category categoryName={activeCategory}></Category>
             </div>
         </section>
