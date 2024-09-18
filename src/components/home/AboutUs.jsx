@@ -58,9 +58,9 @@ function AboutUs() {
                             pellentesque facilisis. Cras placerat neque porta
                             est aliquet convallis.
                         </p>
-                        <button className="uppercase text-lg font-oswald mt-5 border-b-2 border-solid border-white text-white">
+                        <a href="/Ourstory" className="uppercase text-lg font-oswald mt-5 border-b-2 border-solid border-white text-white">
                             read more
-                        </button>
+                        </a>
                     </div>
                 </div>
             </motion.section>
